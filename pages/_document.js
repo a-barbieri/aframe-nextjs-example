@@ -16,7 +16,6 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <style>{`body { margin: 0 } /* custom! */`}</style>
-          <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
         </Head>
         <body className="custom_class">
         {renderScene()}

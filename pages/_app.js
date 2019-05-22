@@ -1,5 +1,6 @@
 import React from 'react';
 import App, { Container } from 'next/app';
+import { AFrameSingleton } from "../lib/aframe";
 
 class MyApp extends App {
   static async getInitialProps({ Component, ctx }) {
@@ -9,7 +10,7 @@ class MyApp extends App {
       pageProps = await Component.getInitialProps(ctx);
     }
 
-    return { pageProps };
+    return { pageProps, AFrameSingleton };
   }
 
   render() {
