@@ -3,3 +3,9 @@ node_modules
 
 # WebStorm Editor
 .idea
+
+# OS X
+.DS_Store
+
+# Next JS
+.next
